@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Mental Interactivo - Sociedad</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Bloque 1: Encabezado -->
+    <header class="container my-5 text-center">
+        <h1 class="display-4 fw-bold text-primary">Mapa Interactivo de Sociedad</h1>
+        <p class="lead text-muted">Explora los conceptos clave de Economía, Identidad y Nacionalismo</p>
+    </header>
+
+    <!-- Bloque 2: Mapa Mental -->
+    <div class="mindmap-section">
+        <div class="mindmap-container">
+            <!-- Nodo Central -->
+            <div class="node main-node" id="centralNode">
+                <div class="node-content">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Sociedad</h3>
+                </div>
+            </div>
+
+            <!-- Nodos Secundarios -->
+            <div class="node secondary-node" id="economia">
+                <div class="node-content">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Economía</h4>
+                </div>
+                <div class="subnodes" id="subnodes-economia">
+                    <!-- Los subnodos se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+
+            <div class="node secondary-node" id="identidad">
+                <div class="node-content">
+                    <i class="fas fa-users"></i>
+                    <h4>Identidad</h4>
+                </div>
+                <div class="subnodes" id="subnodes-identidad">
+                    <!-- Los subnodos se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+
+            <div class="node secondary-node" id="nacionalismo">
+                <div class="node-content">
+                    <i class="fas fa-flag"></i>
+                    <h4>Nacionalismo</h4>
+                </div>
+                <div class="subnodes" id="subnodes-nacionalismo">
+                    <!-- Los subnodos se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subnodeTooltip" class="ghost-tooltip" role="tooltip" aria-hidden="true"></div>
+
+    <div class="modal fade" id="sociedadModal" tabindex="-1" aria-labelledby="sociedadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sociedadModalLabel">¿Qué es Sociedad?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-2"><strong>Sociedad</strong> es el conjunto de personas que conviven e interactúan en un mismo espacio, compartiendo normas, instituciones, cultura y formas de organización.</p>
+                    <p class="mb-0">Este mapa conecta la sociedad con tres dimensiones clave: <strong>Economía</strong> (cómo producimos e intercambiamos), <strong>Identidad</strong> (quiénes somos y qué valores compartimos) y <strong>Nacionalismo</strong> (sentido de pertenencia y proyecto colectivo).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <p class="mb-0 text-muted">
+                Escuela Normal de Formación Superior Alesio Blandón Juárez<br>
+                Asignatura: Identidad Nacional, Modelo Sociopolítico y Económico de Nicaragua
+            </p>
+            <P class="mb-0 text-muted">Docente: Msc. Martha Patricia Portugal Duarte</P>
+<p class="mb-0 text-muted">Estudiantes: Jimmy Javier Martínez Maltez, Lidieth Paola Murillo Espino, Saraí Sequeira Ramírez</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
